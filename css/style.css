@@ -68,6 +68,9 @@ h1.later { margin-top: 50px; }
 .project p { line-height: 1.3; }
 .paper_title { margin: 0; font-size: 17px; }
 .added_features { margin: 6px 0 5px 10px; font-size: 13px; color: var(--secondary); }
+.data-figure { margin: 10px 0 40px 10px; }
+.data-figure img { display: block; width: 100%; max-width: 640px; height: auto; border: 1px solid #ddd; }
+.data-figure figcaption { margin-top: 5px; font-size: 12px; font-style: italic; color: var(--secondary); }
 
 .abstract { margin: 8px 0 20px 10px; font-size: 14.5px; line-height: 1.7; }
 .abstract summary { cursor: pointer; display: list-item; margin-bottom: 6px; }
