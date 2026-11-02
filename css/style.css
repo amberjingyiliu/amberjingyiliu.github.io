@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+:root {
+  color-scheme: light;
+  --text: #333333;
+  --muted: #8a8f94;
+  --secondary: #4b4b4b;
+  --rule: #e5e5e5;
+  --accent: #1f5673;
+  --accent-dark: #143a4f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px 16px 40px;
+  background: #ffffff;
+  color: var(--text);
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+.container { max-width: 750px; margin: 0 auto; }
+
+/* Masthead */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-bottom: 19px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--rule);
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.site-name { margin: 0; font-size: 24px; font-weight: normal; line-height: 40px; }
+.site-name a { color: var(--muted); }
+.site-name a:hover { color: var(--accent); text-decoration: none; }
+
+.nav { display: flex; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.nav a { display: block; padding: 8px 14px; border-radius: 4px; font-size: 14px; }
+.nav a:hover { background: #eef3f6; text-decoration: none; }
+.nav .active a, .nav .active a:hover { background: var(--accent); color: #ffffff; }
+
+/* Home */
+.intro { display: flex; gap: 44px; align-items: flex-start; margin: 40px 0; }
+.intro-photo { flex: 0 0 220px; text-align: center; }
+.avatar { display: block; width: 100%; max-width: 220px; height: auto; margin: 0 auto; border-radius: 12px; }
+.intro-text { flex: 1; min-width: 0; font-size: 15px; }
+.intro-text p { margin: 0 0 14px; line-height: 1.7; }
+.intro-text ul { margin: 0 0 22px; padding-left: 20px; line-height: 1.7; }
+.intro-text h2 { margin: 0 0 8px; font-size: 16px; }
+.contact-details { font-size: 14px; }
+
+/* Research */
+h1 { margin: 0 0 25px; font-size: 26px; font-weight: 700; line-height: 1.3; }
+h1.later { margin-top: 50px; }
+
+.project { margin-bottom: 41px; }
+.project p { line-height: 1.3; }
+.paper_title { margin: 0; font-size: 17px; }
+.added_features { margin: 6px 0 5px 10px; font-size: 13px; color: var(--secondary); }
+
+.abstract { margin: 8px 0 20px 10px; font-size: 14.5px; line-height: 1.7; }
+.abstract summary { cursor: pointer; display: list-item; margin-bottom: 6px; }
+
+/* Teaching */
+.institution { margin: 0; font-size: 17px; font-weight: 700; }
+.role { margin: 2px 0 12px; font-size: 13px; font-style: italic; color: var(--secondary); }
+.courses { margin: 0 0 30px 10px; padding: 0; list-style: none; font-size: 14px; line-height: 2; }
+.course-term { margin-left: 6px; font-size: 13px; color: var(--secondary); }
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding-top: 19px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Highlights text that still needs filling in. Nothing is yellow once every
+   placeholder is replaced; the whole rule can then be deleted. */
+.ph { background: #fff1a8; color: #5c4a00; padding: 1px 3px; border-radius: 3px; }
+
+@media (max-width: 640px) {
+  .intro { flex-direction: column; align-items: stretch; gap: 24px; margin: 24px 0; }
+  .intro-photo { flex-basis: auto; }
+  .site-name { font-size: 20px; }
+  .nav a { padding: 6px 10px; }
+}
